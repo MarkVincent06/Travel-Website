@@ -1,0 +1,179 @@
+// import my other sass
+@import 'custom-variables';
+@import 'media-queries';
+
+// import font from google fonts
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// import my nav and footer sections in the webpage
+@import 'navigation'; 
+@import 'footer';
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 2rem;
+}
+
+// Section in "Bicol" webpage
+#hero {
+    position: relative;
+    background-image: url(../img/destinations/bicol/mayonvolcanoHD.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .overlay-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    
+    #text-overlay {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        color: $light;
+
+        #button {
+            border-radius: 20px !important;
+            font-family: 'Oswald', serif !important;
+            font-weight: bolder;
+            margin-top: 20px;
+            position: relative;
+
+            #chevron-down {
+                display: none;
+            }
+
+            &:hover {
+                #chevron-down {
+                    display: inline;
+                }
+            }
+            
+        }
+    
+        .destination-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 4rem;
+            font-weight: bolder;
+        }
+
+        .destination-desc {
+            font-family: 'Oswald', serif !important;
+            width: 75%;
+        }
+    }
+}
+
+// this anchor is for adding space when going to a specific part in a webpage
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.destination-desc2 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bolder;
+    font-size: 2.3rem;
+    color: $dimgray;
+}
+
+.destination-desc3 {
+    font-family: 'Merriweather', serif !important;
+    font-weight: 500;
+}
+
+#image-size {
+    width: 65%;
+}
+
+.picture-reference {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    text-align: right;
+    font-family: 'Oswald', serif !important;
+}
+
+h3 {
+    font-family: 'Bebas Neue', cursive;
+    color: $sandybrown;
+    font-size: 2rem;
+}
+.climate-img {
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+// media quieries
+@include small-size {
+    .picture-reference {
+        h5 {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@include medium-size {
+    #hero {
+        height: 80vh;
+
+        .overlay-bg {
+            height: 80vh;
+        }
+
+        #text-overlay {
+            height: 110%;
+
+            .destination-title {
+                font-size: 3.5rem !important;
+            }  
+        }
+    }
+}
+    
+@include large-size-min {
+    #region-desc-container {
+        padding-top: 100px;
+    }
+   
+    .destination-desc2 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 3rem;
+    }
+}
+
+
+// This is the preloader in the webpage
+#preloader {
+    background: $dimgray url(../img/preloader/loader.gif) no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;    
+    position: fixed;
+    z-index: 2000;
+}
+
+@include medium-size {
+    #preloader {
+        background-size: 40%;
+    }
+}
+

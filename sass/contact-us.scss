@@ -1,0 +1,77 @@
+// import my other sass
+@import 'custom-variables';
+@import 'media-queries';
+
+// import font from google fonts
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// import my nav and footer sections in the webpage
+@import 'navigation'; 
+@import 'footer';
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Section in "contact us" webpage
+#main-title {
+    border-bottom: 2px solid $gainsboro;
+    color: $dimgray;
+    font-family: 'Merriweather', serif !important;
+    padding-bottom: 10px;
+}
+
+#main-desc {
+    color: $dimgray;
+    font-family: 'Merriweather', serif !important;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding-top: 10px;
+}
+
+label {
+    font-size: 0.8rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    color: $dimgray;
+}
+
+#send-btn {
+    font-weight: bold;
+    font-family: 'Merriweather', serif !important;
+    font-size: 0.8rem;
+}
+
+@include small-size {
+    #main-desc {
+        font-size: 0.8rem;
+    }
+}
+
+@include medium-size-min {
+    #form-box {
+        width: 478px;
+    }
+} 
+
+// This is the preloader in the webpage
+#preloader {
+    background: $dimgray url(../img/preloader/loader.gif) no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;    
+    position: fixed;
+    z-index: 2000;
+}
+
+@include medium-size {
+    #preloader {
+        background-size: 40%;
+    }
+}
+

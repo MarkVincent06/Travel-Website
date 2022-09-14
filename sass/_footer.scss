@@ -1,0 +1,50 @@
+// import my other sass
+@import 'custom-variables';
+@import 'media-queries';
+
+h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+}
+
+div {
+     p {
+        opacity: 0.8;
+        font-family: "Open Sans", sans-serif;
+
+        span {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+            opacity: 0.9;
+        }
+    }
+}
+
+.social-media-icons {
+    color: $dimgray;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: all 200ms ease-in-out;
+}
+
+.facebook:active, .facebook:hover {
+    color: #4867aa;
+    transform: scale(1.2);
+}
+
+.twitter:active, .twitter:hover {
+    color: #00aced;
+    transform: scale(1.2);
+}
+
+.instagram:active, .instagram:hover {
+    color:#bc2a8d;
+    transform: scale(1.2);
+}
+
+
+@include large-size {
+    footer .container-fluid .container .row {
+        text-align: center;
+    }
+}

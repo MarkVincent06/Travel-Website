@@ -1,0 +1,171 @@
+// import my other sass
+@import 'custom-variables';
+@import 'media-queries';
+
+// import font from google fonts
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather&display=swap');
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: $gainsboro;
+}
+
+// Navigation
+.btn-close, .btn-close:active, .btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@include medium-size-min {
+    .btn-close {
+        font-size: 20px !important;
+    }
+}
+
+// User settings section 
+#user-title-container {
+    font-family: 'Abril Fatface', cursive;
+    color: $dimgray;
+
+    .bi-tools {
+       font-size: 20px; 
+    }
+}
+
+h4 {
+    color: $dimgray;
+    font-family: 'Abril Fatface', cursive;
+    line-height: 10px;
+}
+
+label {
+    font-size: 0.9rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    color: $dimgray;
+}
+
+input[type=email], input[type=password], input[type=text] {
+    border: 1px solid rgba(87, 122, 119, 0.3);
+    background-color: $gainsboro;
+}
+
+input[type=email]:focus, input[type=password]:focus, input[type=text]:focus {
+    background-color: $gainsboro;
+}
+
+input[type=email]:disabled, input[type=password]:disabled, input[type=text]:disabled {
+    background-color: $gainsboro;
+    opacity: 0.7;
+}
+
+span {
+    font-family: 'Merriweather', serif;
+    font-size: 0.8rem;
+    margin-top: 1px;
+}
+
+#undo-first-name-button, #undo-last-name-button, #undo-email-button {
+    border: none;
+    background-color: #bcd6e5;
+}
+
+#n-user-show-btn, #n-user-hide-btn, #r-user-show-btn, #r-user-hide-btn {
+    cursor: pointer;
+}
+
+// this is for js to remove hover on disabled buttons
+.noHover {
+    pointer-events: none;
+}
+
+//button styling
+.edit-btn, #cancel-account {
+    font-family: 'Merriweather', serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 2px solid $dimgray;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: rgba(86,121,119, 0.5);
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        background-color: rgba(86,121,119, 0.8);
+    }
+}
+
+// delete account button
+.delete-btn {
+    font-family: 'Merriweather', serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: rgba(255, 0 ,0 , 0.5);
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        background-color: rgba(255, 0 ,0 , 0.7);
+    }
+}
+
+// styling of modal content
+#modal-style {
+    border: 1px solid rgba(87, 122, 119, 0.3);
+    border-radius: 8px;
+    background-color: #bcd6e5;
+}
+
+@include medium-size {
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    #user-title-container {
+        margin-bottom: 40px;
+    }
+
+    // user-content-box styling for mobile
+     #m-user-content-box {
+        padding: 20px 10px;
+        border: 1px solid rgba(87, 122, 119, 0.3);
+        border-radius: 8px;
+        background-color: #bcd6e5;
+        margin-left: 5px;
+     }
+}
+
+
+@include medium-size-min {
+    // user-content-box styling
+    .user-content-box {
+        border: 1px solid rgba(87, 122, 119, 0.3);
+        border-radius: 8px;
+        background-color: #bcd6e5;
+        width: 478px;
+    }
+}
+
+
+// This is the preloader in the webpage
+#preloader {
+    background: $dimgray url(../img/preloader/loader.gif) no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;    
+    position: fixed;
+    z-index: 2000;
+}
+
+@include medium-size {
+    #preloader {
+        background-size: 40%;
+    }
+}

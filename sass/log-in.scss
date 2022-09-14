@@ -1,0 +1,156 @@
+// import my other sass
+@import 'custom-variables';
+@import 'media-queries';
+
+// import font from google fonts
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather&display=swap');
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: $gainsboro;
+    position: relative;
+}
+
+// Navigation
+.btn-close, .btn-close:active, .btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@include medium-size-min {
+    .btn-close {
+        font-size: 20px !important;
+    }
+}
+
+//Login 
+h3 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+label {
+    font-size: 0.9rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+}
+
+input[type=email], input[type=password], input[type=text] {
+    border: 1px solid rgba(87, 122, 119, 0.3);
+    background-color: $gainsboro;
+}
+
+input[type=email]:focus, input[type=password]:focus, input[type=text]:focus {
+    background-color: $gainsboro;
+}
+
+span {
+    font-family: 'Merriweather', serif;
+    font-size: 0.8rem;
+}
+
+.error-msg {
+    font-size: 0.8rem !important; 
+    color: #de3545 !important;
+    font-family: "Open Sans", sans-serif !important;
+}
+     
+.success-msg {
+    font-size: 0.8rem; 
+    color: #198754;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+#sign-up-link, #log-in-link {
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-size: 0.8rem;
+    color: $dimgray;
+    transition: all 100ms ease-in-out;
+    cursor: pointer;
+
+    &:hover, &:active {
+        color: $darkslateblue;
+    }
+}
+
+#s-show-btn, #l-show-btn, #s-hide-btn, #l-hide-btn {
+    cursor: pointer;
+    user-select: none;
+}
+
+#login-btn, #sign-up-btn {
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+}
+
+#forgot-pass-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    font-size: 0.7rem;
+    color: $dark;
+    transition: all 100ms ease-in-out;
+
+    &:hover, &:active {
+        color: $darkslateblue;
+    }
+}
+
+#feedback-account {
+    padding: 17px 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8rem;
+    background-color: #ffc0c7;
+    border-radius: 5px;
+}
+
+@include medium-size {
+    h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@include medium-size-min {
+    #l-form-box {
+        border: 1px solid rgba(87, 122, 119, 0.3);
+        border-radius: 15px;
+        width: 478px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 40%);
+    }
+
+    #s-form-box {
+        border: 1px solid rgba(87, 122, 119, 0.3);
+        border-radius: 15px;
+        width: 478px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+    }
+}
+
+
+// This is the preloader in the webpage
+#preloader {
+    background: $dimgray url(../img/preloader/loader.gif) no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;    
+    position: fixed;
+    z-index: 2000;
+}
+
+@include medium-size {
+    #preloader {
+        background-size: 40%;
+    }
+}

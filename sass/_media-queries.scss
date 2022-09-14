@@ -1,0 +1,63 @@
+// import my other sass
+@import 'custom-variables';
+
+@mixin small-size {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin medium-size {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin large-size {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin xlarge-size {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin xxlarge-size {
+    @media screen and (max-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin medium-size-min {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin large-size-min {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin xlarge-size-min {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin xxlarge-size-min {
+    @media screen and (min-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin large-size-xlarge-btw {
+    @media screen and (min-width: 992px) and (max-width: 1200px){
+        @content;
+    }
+}
+
