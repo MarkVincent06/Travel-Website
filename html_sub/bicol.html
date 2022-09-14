@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This is the favicon icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/logo/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/logo/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/logo/favicon/site.webmanifest">
+
+    <script src="https://kit.fontawesome.com/66ee933066.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bicol.min.css">
+    <title>Bicol - It's More Fun In The Philippines</title>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar py-1 fixed-top navbar-expand-lg navbar-light bg-gainsboro">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand"><img src="../img/logo/website-main-logo.png"
+                    alt="Website Logo"></a>
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../html_sub/destinations.html" class="nav-link">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../html_sub/travel-inspirations.html" class="nav-link">Travel Inspirations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about-us.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../contact-us.html" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../html_sub/log-in.html" class="btn btn-outline-darkslateblue px-3 ms-3"
+                            id="log-in-display">Log in</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a href="profile.html" id="profile-display">
+                            <div id="profile-pic-container">
+                                <img src="../img/profile img/default_profile_pic.jpg" class="img-fluid"
+                                    id="profile-pic">
+                            </div>
+                            <span id="profile-name"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Section -->
+    <section class="bg-wheat">
+        <div class="container-fluid" id="hero">
+            <div class="overlay-bg"></div>
+            <div id="text-overlay" class="d-flex justify-content-center align-items-center">
+                <h1 class="destination-title">BICOL</h1>
+                <h4 class="text-center destination-desc">With active volcanoes, mountains, caves and cliffs, along with
+                    blissful white-sand beaches and coral reefs, Bicol is paradise for lovers of the great outdoors.
+                </h4>
+                <a href="#top-10">
+                    <button class="btn btn-primary px-3" id="button">
+                        TOP 10 ACTIVITIES <i class="bi bi-chevron-down ms-1" id="chevron-down"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container p-5">
+            <div class="row g-2">
+                <div class="col-12 col-lg-6" id="region-desc-container">
+                    <h2 class="destination-desc2">ALL YOU NEED TO KNOW ABOUT BICOL</h2>
+                    <p class="destination-desc3">At the southernmost end of Luzon island, the Bicol region has six
+                        provinces composed of Camarines Norte, Camarines Sur, Albay, Sorsogon, Catanduanes and Masbate.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img class="img-fluid" id="image-size" src="../img/destinations/bicol/bicol region.png"
+                        alt="Bicol Region">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-5 bg-light">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="destination-desc2 text-center">WHY IT'S MORE FUN IN BICOL</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 pt-5">
+                    <p class="destination-desc3">
+                        Swimming with whale sharks (known locally as butanding), the world's largest fish, is the
+                        activity most people associate with this part of the world, but there's plenty more outdoorsy
+                        fun to be had in the Bicol region - both on the water and on land. And when you need to relax,
+                        there's a lot of scope for that on the white-sand beaches.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 pt-1">
+                    <div class="card bg-dark text-white" style="border: none;">
+                        <img src="../img/destinations/bicol/ticao island.jpg" class="card-img" alt="Ticao Island">
+                        <div class="card-img-overlay picture-reference">
+                            <h5 class="card-title"><i class="bi bi-camera me-2"></i>Ticao Island, Masbate</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 mt-5">
+                    <h3>CULTURE & FOOD</h3>
+                </div>
+                <div class="col-12 col-md-10 mt-2">
+                    <p class="destination-desc3">The Bicol Region has an array of cultural sites that showcase its rich
+                        history. Originally descended from incomers from China, the inhabitants of Bicol often mix
+                        Chinese, Arab and Spanish ancestry, and most are devout Catholics.
+                    </p>
+                </div>
+                <div class="col-12 col-md-10 mt-2">
+                    <p class="destination-desc3">Bicol is also famed for its spicy food, which is based largely on
+                        coconut and chillies - as evidenced in the likes of gulay na lada or Bicol Express (pork and
+                        local chillies cooked in coconut cream). Other dishes not to miss are laing (taro leaves with
+                        meat or seafood in coconut milk, spiced with chilli, lemongrass and more) and local specialities
+                        featuring local pili nuts.
+                    </p>
+                </div>
+                <div class="col-12 col-md-10 mt-4">
+                    <div class="card bg-dark text-white" style="border: none;">
+                        <img src="../img/destinations/bicol/Ibalong-Festival-201.jpg" class="card-img"
+                            alt="Ibalong Festival">
+                        <div class="card-img-overlay picture-reference">
+                            <h5 class="card-title"><i class="bi bi-camera me-2"></i>Ibalong Festival, Legazpi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 mt-5">
+                    <h3>TOP EVENTS & FESTIVALS</h3>
+                </div>
+                <div class="col-12 col-md-10 mt-2">
+                    <ul class="destination-desc3">
+                        <li>Tinagba Festival, Iriga City - February</li>
+                        <p class="destination-desc3">A harvest thanksgiving including parades, street dancing and
+                            sporting challenges.</p>
+                        <li>Ibalong Festival, Legazpi - August</li>
+                        <p class="destination-desc3">A celebration of a local legend, with masked and costumed
+                            reconstructions of classic battles.</p>
+                        <li>Peñafrancia Festival, Naga - September</li>
+                        <p class="destination-desc3">A barge procession, fireworks and more, celebrating Bicol's patron,
+                            Our Lady of Peñafrancia.</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-5">
+                <div class="col-12 col-md-5">
+                    <h3>CLIMATE</h3>
+                    <p class="destination-desc3">Tropical, without pronounced dry and wet seasons in the western and
+                        southern areas and no dry season in the eastern and northern areas. The average temperature
+                        throughout the year ranges from about of 27°C to 30°C. Minimum monthly rainfall occurs from
+                        March to May.
+                    </p>
+                </div>
+                <div class="col-md-5 text-center">
+                    <img class="img-fluid climate-img" src="../img/destinations/bicol/climate in legazpi.png"
+                        alt="Legazpi Climate">
+                </div>
+            </div>
+        </div>
+
+        <a class="anchor" id="top-10"></a>
+
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="destination-desc2 text-center">TOP 10 THINGS TO DO IN BICOL</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 mt-4">
+                    <div class="card bg-dark text-white" style="border: none;">
+                        <img src="../img/destinations/bicol/whale shark.jpg" class="card-img" alt="Whale Sharks">
+                        <div class="card-img-overlay picture-reference">
+                            <h5 class="card-title"><i class="bi bi-camera me-2"></i>Whale Sharks, Sorsogon</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 mt-5">
+                    <h3 class="text-dimgray">1. WHALE SHARKS</h3>
+                    <p class="destination-desc3">See and snorkel near whale sharks in Donsol in Sorsogon.</p>
+                </div>
+                <div class="col-12 col-md-10 mt-2">
+                    <h3 class="text-dimgray">2. SNORKELLING</h3>
+                    <p class="destination-desc3">Go island-hopping and snorkelling around Caramoan and its islands in
+                        the east of Bicol.</p>
+                </div>
+                <div class="col-12 col-md-10 mt-2">
+                    <h3 class="text-dimgray">3. SURFING</h3>
+                    <p class="destination-desc3">Surf on Catanduanes Island and swim in its waterfalls and lagoons.</p>
+                </div>
+                <div class="col-12 col-md-10 mt-4">
+                    <div class="card bg-dark text-white" style="border: none;">
+                        <img src="../img/destinations/bicol/caramoan islands.jpg" class="card-img"
+                            alt="Caramoan Islands">
+                        <div class="card-img-overlay picture-reference">
+                            <h5 class="card-title"><i class="bi bi-camera me-2"></i>Caramoan Islands, Camarines Sur
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 mt-5">
+                    <h3 class="text-dimgray">4. VISIT A VOLCANO</h3>
+                    <p class="destination-desc3">Take an escorted tour by ATV to the active volcano Mount Mayon.</p>
+                </div>
+                <div class="col-12 col-md-10 mt-2">
+                    <h3 class="text-dimgray">5. EXPLORE LEGAZPI</h3>
+                    <p class="destination-desc3">Explore Bicol's main city, Legazpi, with its Franciscan church, Spanish
+                        pier and Japanese tunnels.</p>
+                </div>
+                <div class="col-12 col-md-10 mt-2">
+                    <h3 class="text-dimgray">6. CAGSAWA RUINS</h3>
+                    <p class="destination-desc3">Tour the Cagsawa Ruins - the atmospheric remnants of a 16th-century
+                        Franciscan church.</p>
+                </div>
+                <div class="col-12 col-md-10 mt-2">
+                    <h3 class="text-dimgray">7. QUITINDAY UNDERGROUND RIVER</h3>
+                    <p class="destination-desc3">Take a boat-ride through the Quitinday Underground River, a natural
+                        cave system.</p>
+                </div>
+                <div class="col-12 col-md-10 mt-4">
+                    <div class="card bg-dark text-white" style="border: none;">
+                        <img src="../img/destinations/bicol/Cagsawa Ruins 2.JPG" class="card-img" alt="Cagsawa Ruins">
+                        <div class="card-img-overlay picture-reference">
+                            <h5 class="card-title"><i class="bi bi-camera me-2"></i>Cagsawa Ruins, Albay</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 mt-5">
+                    <h3 class="text-dimgray">8. DARAGA CHURCH</h3>
+                    <p class="destination-desc3">Visit the imposing Daraga Church, set on a hilltop against a backdrop
+                        of Mayon volcano.</p>
+                </div>
+                <div class="col-12 col-md-10 mt-2">
+                    <h3 class="text-dimgray">9. ZIP-LINE AT LIGNON HILL NATURE PARK</h3>
+                    <p class="destination-desc3">Head for Lignon Hill Nature Park with its zip-line, hiking trail and
+                        valley views.</p>
+                </div>
+                <div class="col-12 col-md-10 mt-2">
+                    <h3 class="text-dimgray">10. ALBAY PARK AND WILDLIFE</h3>
+                    <p class="destination-desc3">Relax in Albay Park and Wildlife with its bike hire, lagoon boating and
+                        fishing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid bg-gainsboro">
+            <div class="container p-4">
+                <div class="row gy-3 justify-content-center text-left">
+                    <div class="col-12 col-lg-4">
+                        <a href="#"><img class="img-fluid" src="../img/logo/website-main-logo.png"
+                                alt="Website Logo"></a>
+                        <p style="opacity: 0.9">Copyright &copy;2022 It's More Fun In The Philippines. All Rights
+                            Reserved.</p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h6>CONTACT & ADDRESS</h6>
+                        <p><span>Address:</span> Ponso, Polangui Albay</p>
+                        <p><span>Telephone:</span> +63 963 713 7897</p>
+                        <p><span>Email:</span> vincentmariscotescleofe06@gmail.com</p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h6>SOCIAL MEDIA</h6>
+                        <a href="https://www.facebook.com/markvincentcleofe06/" target="_blank">
+                            <i class="fab fa-facebook-square social-media-icons facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fab fa-twitter social-media-icons twitter"></i></a>
+                        <a href="https://www.instagram.com/vincentmariscotescleofe06/" target="_blank">
+                            <i class="fab fa-instagram social-media-icons instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- This script is for the preloader event -->
+    <script>
+        var loader = document.querySelector("#preloader");
+
+        window.addEventListener("load", function () {
+            loader.style = "display: none";
+        })
+    </script>
+
+    <!-- This script is for scrolling the page to top when refreshing -->
+    <script>
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        } else {
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+        }
+    </script>
+
+
+    <!-- This will toggle the display of login btn and profile -->
+    <script>
+        const displayProfile = document.querySelector('#profile-display');
+        const displayLogInBtn = document.querySelector('#log-in-display');
+        const profileName = document.querySelector('#profile-name');
+
+        var getCurrentUser = JSON.parse(localStorage.getItem('currentUser'));
+
+        if (localStorage.getItem('currentUser')) {
+            displayProfile.style = "display: flex";
+            displayLogInBtn.style = "display: none";
+
+            profileName.innerHTML = getCurrentUser[0] + " " + getCurrentUser[1];
+        }
+        else {
+            displayProfile.style = "display: none";
+        }  
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

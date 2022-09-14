@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This is the favicon icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/logo/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/logo/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/logo/favicon/site.webmanifest">
+
+    <script src="https://kit.fontawesome.com/66ee933066.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/log-in.min.css">
+    <title>Log in - It's More Fun In The Philippines</title>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Navigation -->
+    <div class="navbar navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo/website-main-logo.png" alt="Website main logo">
+            </a>
+            <a href="../index.html">
+                <button type="button" class="btn-close" aria-label="Close"></button>
+            </a>
+        </div>
+    </div>
+    <!-- Login Section -->
+    <div class="container-sm p-4" id="l-form-box">
+        <div class="row">
+            <div class="col-12 mx-auto mt-md-2">
+                <h3>Log in</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center my-3">
+            <div class="col-12">
+                <form action="../index.html" id="l-form" novalidate>
+                    <!-- Email -->
+                    <div class="d-flex" style="border: none;">
+                        <label for="l-email-input" class="form-label">Email</label>
+                        <div class="ms-auto" style="border: none;">
+                            <span>Need an account?</span>
+                            <a id="sign-up-link">Sign up</a>
+                        </div>
+                    </div>
+                    <input type="email" class="form-control" id="l-email-input" required>
+                    <span id="feedback-user-email"></span>
+
+                     <!-- Password -->
+                     <div class="d-flex mt-4" style="border: none;">
+                        <label for="l-password-input" class="form-label">Password</label>
+                        <div class="ms-auto" style="border: none;">
+                            <span id="l-show-btn"><i class="bi bi-eye-fill me-1"></i>Show</span>
+                            <span id="l-hide-btn" style="display: none;"><i class="bi bi-eye-slash-fill me-1"></i>Hide</span>
+                        </div>
+                    </div>
+                    <input type="password" class="form-control mb-4" id="l-password-input" required>
+                    <div class="row">
+                        <div class="col-12 mb-3" id="feedback-account" style="display: none;"></div>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-dimgray rounded-pill py-2" id="login-btn">Log in</button>
+                    </div>
+                    
+                    <div class="text-center mt-3">
+                        <a href="" id="forgot-pass-link">Forgot password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign-up Section -->
+    <div class="container-sm p-4" id="s-form-box"  style="display: none;">
+        <div class="row">
+            <div class="col-12 mx-auto mt-md-2">
+                <h3>Sign up</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center my-3">
+            <div class="col-12">
+                <form id="s-form" novalidate>
+                    <!-- First name and Last name -->
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="first-name" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="s-first-name-input" required>
+                            <span id="feedback-first-name"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="last-name" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="s-last-name-input" required>
+                            <span id="feedback-last-name"></span>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="d-flex mt-3" style="border: none;">
+                        <label for="s-email-input" class="form-label">Email</label>
+                    </div>
+                    <input type="email" class="form-control" id="s-email-input" required>
+                    <span id="feedback-email"></span>
+
+                     <!-- Password -->
+                     <div class="d-flex mt-3" style="border: none;">
+                        <label for="s-password-input" class="form-label">Password</label>
+                        <div class="ms-auto" style="border: none;">
+                            <span id="s-show-btn" style="display: inline;"><i class="bi bi-eye-fill me-1"></i>Show</span>
+                            <span id="s-hide-btn" style="display: none;"><i class="bi bi-eye-slash-fill me-1"></i>Hide</span>
+                        </div>
+                    </div>
+                    <input type="password" class="form-control" id="s-password-input" required>
+                    <span id="feedback-password"></span>
+
+                    <div class="d-grid gap-2 mt-5">
+                        <button type="submit" class="btn btn-dimgray rounded-pill py-2" id="sign-up-btn">Sign up</button>
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <span>Already have an account?</span>
+                            <a id="log-in-link">Log in</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- This script is for the preloader event -->
+    <script>
+        const loader = document.querySelector("#preloader");
+        
+        window.addEventListener("load", function() {
+            loader.style = "display: none";
+        });
+    </script>
+
+    <!-- This script is for scrolling the page to top when refreshing -->
+    <script>
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        } else {
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+        }
+    </script>
+
+    <!-- Log-in js -->
+    <script src="../js/log-in.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
