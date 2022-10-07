@@ -1,0 +1,195 @@
+// import my other sass
+@import 'custom-variables';
+@import 'media-queries';
+
+// import font from google fonts
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap');
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// import my nav and footer sections in the webpage
+@import 'navigation';   
+@import 'footer';
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Section in "about us" webpage
+
+h1 {
+    font-family: 'Lobster', cursive !important;
+    font-weight: bolder !important;
+    color: $sandybrown;
+}
+
+h4 {
+    font-family: 'Abril Fatface', cursive !important;
+    color: $dark;
+    opacity: 0.7;
+    font-size: 1.2rem;
+}
+
+.member-a {
+    position: relative;
+
+    .img-container-a {
+        height: 100%;
+        width: 60%;
+        margin-left: auto;
+    }
+
+    .name-tag-a {
+        position: absolute;
+        left: 69%;
+        top: -3%;
+        transform: translate(-50%, -50%);
+        padding: 1% 8%;
+        background: $sandybrown;
+
+        h2 {
+            font-family: 'Permanent Marker', cursive !important;
+            color: $dimgray;
+        }
+    }
+}
+
+.member-b {
+    position: relative;
+
+    .img-container-b {
+        height: 100%;
+        width: 60%;
+        margin-right: auto;
+    }
+
+    .name-tag-b {
+        position: absolute;
+        left: 31%;
+        top: -3%;
+        transform: translate(-50%, -50%);
+        padding: 1% 10%;
+        background: $dark;
+
+        h2 {
+            font-family: 'Permanent Marker', cursive !important;
+            color: $dimgray;
+        }
+    }
+}
+
+.description-a {
+
+    h5 {
+        font-size: 1.2rem !important;
+        width: 80%;
+        color: $sandybrown;
+        font-family: 'Abril Fatface', cursive !important;
+    }
+}
+
+.description-b {
+
+    h5 {
+        margin-left: auto;
+        font-size: 1.2rem !important;
+        width: 80%;
+        color: $dark;
+        font-family: 'Abril Fatface', cursive !important;
+    }
+}
+
+
+@include medium-size {
+    .member-a {
+        .img-container-a {
+            margin: auto;
+        }
+
+        .name-tag-a {
+            left: 50%;
+        }
+    }
+
+    .member-b {
+        .img-container-b {
+            margin: auto;
+        }
+
+        .name-tag-b {
+            left: 50%;
+        }
+    }
+
+    .description-a {
+        margin-top: 10px;
+
+        h5 {
+            text-align: center;
+        }
+    }
+
+    .description-b {
+        margin-top: 10px;
+
+        h5 {
+            text-align: center;
+        }
+    }
+}
+
+@include large-size {
+    h1 {
+        font-size: 3rem !important;
+        text-align: center;
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 1rem !important;
+    }
+
+    .description-a {
+        h5 {
+            width: 100%;
+            font-size: 1rem !important;
+        }
+    }
+
+    .description-b {
+        h5 {
+            width: 100%;
+            font-size: 1rem !important;
+        }
+    }
+}
+
+@include xxlarge-size-min {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+}
+
+// This is the preloader in the webpage
+#preloader {
+    background: $dimgray url(../img/preloader/loader.gif) no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 2000;
+}
+
+@include medium-size {
+    #preloader {
+        background-size: 40%;
+    }
+}

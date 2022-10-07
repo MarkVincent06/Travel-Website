@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This is the favicon icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/logo/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/logo/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/logo/favicon/site.webmanifest">
+
+    <script src="https://kit.fontawesome.com/66ee933066.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/contact-us.min.css">
+    <title>Contact Us - It's More Fun In The Philippines</title>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Navigation -->
+    <div class="container-fluid">
+        <nav class="navbar py-1 fixed-top navbar-expand-lg navbar-light bg-gainsboro">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="../img/logo/website-main-logo.png" alt="Website Logo"></a>
+                <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="destinations.html" class="nav-link">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="travel-inspirations.html" class="nav-link">Travel Inspirations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about-us.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:window.location.href=window.location.href"
+                                class="nav-link active">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="log-in.html" class="btn btn-outline-darkslateblue px-3 ms-3"
+                                id="log-in-display">Log in</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a href="profile.html" id="profile-display">
+                                <div id="profile-pic-container">
+                                    <img src="../img/profile img/default_profile_pic.jpg" class="img-fluid"
+                                        id="profile-pic">
+                                </div>
+                                <span id="profile-name"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Section -->
+    <section class="container-fluid bg-white p-5 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 text-center">
+                <h1 id="main-title">Contact Us</h1>
+                <h4 id="main-desc">
+                    If you have any questions or queries, feel free to message us by filling out our form below. We
+                    would be happy to assist and answer any questions you have in mind about the website.
+                </h4>
+            </div>
+        </div>
+
+        <div id="form-box" class="mx-auto">
+            <div class="row justify-content-center my-3">
+                <div class="col-10">
+                    <form>
+                        <label for="name" class="form-label">Name <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control mb-3" id="name" required>
+
+                        <label for="email" class="form-label">Email <span style="color: red;">*</span></label>
+                        <input type="email" class="form-control mb-3" id="email" required>
+
+                        <label for="subject" class="form-label">Subject <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control mb-3" id="subject" required>
+
+                        <label for="query" class="form-label">Message <span style="color: red;">*</span></label>
+                        <textarea type="text" class="form-control mb-4" id="query" required></textarea>
+
+                        <button type="submit" class="btn btn-dimgray py-2" id="send-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid bg-gainsboro">
+            <div class="container p-4">
+                <div class="row gy-3 justify-content-center text-left">
+                    <div class="col-12 col-lg-4">
+                        <a href="#"><img class="img-fluid" src="../img/logo/website-main-logo.png"
+                                alt="Website Logo"></a>
+                        <p style="opacity: 0.9">Copyright &copy;2022 It's More Fun In The Philippines. All Rights
+                            Reserved.</p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h6>CONTACT & ADDRESS</h6>
+                        <p><span>Address:</span> Ponso, Polangui Albay</p>
+                        <p><span>Telephone:</span> +63 963 713 7897</p>
+                        <p><span>Email:</span> vincentmariscotescleofe06@gmail.com</p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h6>SOCIAL MEDIA</h6>
+                        <a href="https://www.facebook.com/markvincentcleofe06/" target="_blank">
+                            <i class="fab fa-facebook-square social-media-icons facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fab fa-twitter social-media-icons twitter"></i></a>
+                        <a href="https://www.instagram.com/vincentmariscotescleofe06/" target="_blank">
+                            <i class="fab fa-instagram social-media-icons instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- This script is for the preloader event -->
+    <script>
+        const loader = document.querySelector("#preloader");
+
+        window.addEventListener("load", function () {
+            loader.style = "display: none";
+        });
+    </script>
+
+    <!-- This script is for scrolling the page to top when refreshing -->
+    <script>
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        } else {
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+        }
+    </script>
+
+    <!-- This will toggle the display of login btn and profile -->
+    <script>
+        const displayProfile = document.querySelector('#profile-display');
+        const displayLogInBtn = document.querySelector('#log-in-display');
+        const profileName = document.querySelector('#profile-name');
+
+        var getCurrentUser = JSON.parse(localStorage.getItem('currentUser'));
+
+        if (localStorage.getItem('currentUser')) {
+            displayProfile.style = "display: flex";
+            displayLogInBtn.style = "display: none";
+
+            profileName.innerHTML = getCurrentUser[0] + " " + getCurrentUser[1];
+        }
+        else {
+            displayProfile.style = "display: none";
+        }  
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
